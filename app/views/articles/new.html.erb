@@ -1,6 +1,8 @@
+
+<!--
 <h1>New article</h1>
 
-<%= form_for @task do |f| %>
+<%= form_for @article do |f| %>
   <%= f.label :title, "Title" %>
   <%= f.text_field :title %>
 
@@ -10,4 +12,12 @@
   <%= f.submit "Create Article" %>
 <% end %>
 
-<p><%= link_to "Back" articles_path %></p>
+<p><%= link_to "Back", articles_path %></p>
+ -->
+
+<body><h1>New article</h1>
+
+&lt;%= render 'form' %&gt;
+
+&lt;%= link_to 'Back', articles_path %&gt;
+</body>

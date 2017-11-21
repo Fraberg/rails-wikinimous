@@ -3,12 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+
+// navbar
+}
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding: 0px 8px;
 }
 
 .navbar-container a {
@@ -19,19 +26,82 @@
   background-color: rgb(230, 230, 230);
   padding: 0px 5px;
   height: 50px;
+  color: rgb(150, 150, 150)
 }
 
 .navbar-header h1  {
   float: left;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
+  font-weight: normal;
 }
 
 .tabs {
   list-style-type: none;
 }
 
-.tabs p {
-  font-size: 15px;
+.tabs li {
+  font-size: 14px;
   line-height: 20px;
 }
+
+// index
+
+.index-container {
+  width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-sm-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+.col-sm-8 {
+    width: 66.66666667%;
+}
+
+.index-title a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.index-title a:hover {
+  text-decoration: underline;
+}
+
+// show
+
+.show-container {
+  margin-top: 50px;
+  width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.show-title h1 {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+
+.article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+
+.title {
+  font-family: Roboto Slab;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,22 @@
+<h1>Update article</h1>
+
+<!--
+<%= form_for @article do |f| %>
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content, "Content" %>
+  <%= f.text_field :content %>
+
+  <%= f.submit "Update Article" %>
+  <% end %>
+
+  <p><%= link_to "Back", articles_path %></p>
+ -->
+
+<h1>Editing article</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @article %> |
+<%= link_to 'Back', articles_path %>

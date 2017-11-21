@@ -6,6 +6,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/89b8f8acaf.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab">
   </head>
 
   <body>
@@ -13,8 +16,9 @@
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-header">
-          <a href="/"><h1>Wikinimous</h1></a>
+          <a href="/"><h1><%= link_to "Wikinimous", articles_path %></h1></a>
         </div>
+
         <div>
           <ul class="tabs">
             <li><%= link_to "New Article", new_article_path %></li>
