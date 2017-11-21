@@ -1,0 +1,13 @@
+<h1>New article</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content, "Content" %>
+  <%= f.text_field :content %>
+
+  <%= f.submit "Create Article" %>
+<% end %>
+
+<p><%= link_to "Back" articles_path %></p>

@@ -9,6 +9,21 @@
   </head>
 
   <body>
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-header">
+          <a href="/"><h1>Wikinimous</h1></a>
+        </div>
+        <div>
+          <ul class="tabs">
+            <li><%= link_to "New Article", new_article_path %></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <%= yield %>
+
   </body>
 </html>
